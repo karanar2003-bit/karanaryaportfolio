@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Karan — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+      </a>
+
+      <nav class="nav">
+        <ul id="navLinks" class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <button id="loginBtn" class="btn small">Login</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Hello, I'm <span class="accent">Karan Arya</span></h1>
+      <p class="lead">Web Developer • UI/UX Enthusiast • Designer</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn outline">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container about-grid">
+      <div class="about-image">
+        <img src="IMG-20241021-WA0028.jpg" alt="Profile image">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I build clean, modern websites and web apps. I enjoy turning ideas into
+          beautiful and usable products. I focus on performance, accessibility and
+          responsive design.
+        </p>
+
+        <ul class="info-list">
+          <li><strong>Location:</strong> Madangir, India</li>
+          <li><strong>Email:</strong> karanar2003@gmail.com</li>
+        </ul>
+
+        <a href="#contact" class="btn primary">Let's talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>HTML & CSS</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Frontend</h3>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section projects">
+  <div class="container">
+    <h2>Selected Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <article class="card project-card">
+        <img src="screenshot-1754652980131.png" alt="Project 1">
+        <div class="card-body">
+          <h3>Lux Cafe Website</h3>
+          <p>Responsive restaurant website using HTML, CSS, and JS.</p>
+          <div class="card-actions">
+            <a href="https://luxcafe.netlify.app/" class="btn small primary">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card project-card">
+        <img src="https://external-preview.redd.it/prime-video-identity-v0-xyqf4CML2s3WgqtvpIE2a6dRSh29FoyCHjSYTw5yFSU.jpg?auto=webp&s=0a30a7997bb552afd449f985284f9678ef759cf1" alt="Amazon Prime Clone">
+        <div class="card-body">
+          <h3>Amazon Prime Clone</h3>
+          <p>Fully responsive Amazon Prime homepage UI.</p>
+          <div class="card-actions">
+            <a href="https://amazonprim.netlify.app/" class="btn small primary">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 (Fixed) -->
+      <article class="card project-card">
+        <img src="https://static.vecteezy.com/system/resources/previews/020/190/686/original/netflix-logo-netflix-icon-free-free-vector.jpg" alt="NetHome (Netflix Clone)">
+        <div class="card-body">
+          <h3>Netflix Clone (NetHome)</h3>
+          <p>A responsive homepage clone of Netflix</p>
+          <div class="card-actions">
+            <a href="https://nethome.netlify.app/" class="btn small primary">Live</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous">&#10094;</button>
+    <div class="lb-content">
+      <img id="lbImage" src="" alt="">
+      <div id="lbCaption" class="lb-caption"></div>
+    </div>
+    <button class="lb-next" id="lbNext" aria-label="Next">&#10095;</button>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Contact</h2>
+        <p>Email: karanar2003@gmail.com</p>
+        <p>Phone: +91-9945525781</p>
+        <p>Address: Madangir, India</p>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm" novalidate>
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="email" id="email" placeholder="Your email" required />
+          <textarea id="message" placeholder="Your message" rows="6" required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p id="formMsg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGIN POPUP (GLASS EFFECT) -->
+  <div id="loginModal" class="login-modal" aria-hidden="true">
+    <div class="login-card">
+      <button class="login-close" id="loginClose" aria-label="Close">&times;</button>
+      <h3>Sign In</h3>
+      <p class="muted">Welcome back — please login to continue</p>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPass" placeholder="Password" required>
+        <button type="submit" class="btn primary">Login</button>
+        <p class="muted small">Don't have an account? <a href="#">Sign up</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Karan | Crafted with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
